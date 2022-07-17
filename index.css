@@ -422,7 +422,7 @@ h2{
 }
 
 .Myport{
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 .port{
@@ -435,7 +435,7 @@ h2{
   /*display: none;*/
 }
 .port>div>a>img{
-  width: 40vw;
+  width: 70vw;
   margin: 0 5vw;
 }
 .port>div>a>img:hover{

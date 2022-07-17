@@ -373,9 +373,38 @@ h2{
   justify-content: center;
   text-align: center;
 }
-.about>a{
+.about>div{
+  display: flex;
+  margin: 20px auto;
+  gap: 30px;
+}
+.about>div>a{
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  color: #34B0BE;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+.bxl-github{
+  color:black
+}
+.bxl-linkedin{
+  color: white;
+  background-color: #0A66C2;
+  border-radius: 10px;
+}
+.Curriculum{
+  height: 50px;
+  width: min-content;
+}
+.about>div>a:hover{
+  opacity: 0.8;
+  color: #34B0BE;
 }
 .habilidades{
   color: white;

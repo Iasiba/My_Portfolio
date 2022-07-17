@@ -389,6 +389,8 @@ h2{
   padding: 10px;
   border-radius: 10px;
   color: black;
+  width: 90px;
+  height: 90x;
 }
 .bxl-github{
   color:black
@@ -399,7 +401,7 @@ h2{
   border-radius: 10px;
 }
 .Curriculum{
-  height: 50px;
+  height: 60px;
   width: min-content;
 }
 .about>div>a:hover{
@@ -422,7 +424,7 @@ h2{
 }
 
 .Myport{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .port{
@@ -435,7 +437,7 @@ h2{
   /*display: none;*/
 }
 .port>div>a>img{
-  width: 70vw;
+  width: 80vw;
   margin: 0 5vw;
 }
 .port>div>a>img:hover{
@@ -448,6 +450,7 @@ footer{
   background: linear-gradient(10deg,#242635, #373a59,#242635);
   text-align: center;
   padding: 10px;
+  margin-top: 10px;
 }
 h3{
   color: #34B0BE;
@@ -520,5 +523,5 @@ h2{
 i{
   color: #128c7e;
   font-size: 60px;
-  z-index: 100;
+  margin: 3px;
 }

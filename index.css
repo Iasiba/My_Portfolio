@@ -1,0 +1,495 @@
+h2,h1,div,p,section,li,ul, header, .navbar ,body{
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+}
+
+  *, 
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+ 
+    background    :#242635;  
+  }
+  .menu {
+    width: 30px;
+    color: white;
+
+
+    border        : 1px solid #3c4445;
+    font-family   : monospace;
+    display       : flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size     : 1.5rem;
+    padding-right       :  0rem;
+    padding-left   : 1.6rem;
+    line-height:70%;
+    margin: 20px 0px 0px 20px;
+    border-radius: 3px;
+
+}
+.menu :hover {
+  color:#34B0BE;
+  }
+
+  .pages a{
+    color: white;
+    
+  }
+.navbar{
+    width: 100%;
+    height: 60px;
+ /*
+display: inline-block;
+   display: flex;*/
+
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+
+
+    align-items: center;
+
+  }
+.hamburguer{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.pages{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  width: auto;
+  display: flex;
+ justify-content: center;
+align-items: center;
+}
+.pages>a{
+  text-decoration: none;
+
+  padding: 14px;
+}
+.pages a:hover{
+  color: #34B0BE;
+}
+
+.checkbox{
+  display: none;
+}
+/*
+
+@media screen and (min-width: 800px){
+  .navbar{
+    align-items: center;
+    display: flex;
+
+  }
+  .menu{
+    visibility: hidden;
+    display: none;
+  }
+  .photo{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .pages a{
+    padding: 14px;
+  }
+}
+*/
+
+@media screen and (max-width: 800px){
+  /*
+  .pages{
+    visibility: hidden;
+    display: none;
+  }*/
+  .navbar{
+    height: 60px;
+    width: 200px;
+    gap: 0px;
+    justify-content: flex-end;
+    /*flex-direction: row-reverse;*/
+    position: fixed;
+  }
+  .pages a{
+    padding: 20px;
+  }
+  .pages{
+    padding: 0%;
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    border: #34B0BE solid 1px;
+    position: fixed;
+    left: 55px;
+    top: 10px;
+    border-radius: 5px;
+
+  }
+  .pages:before {
+    content: ' ';
+    display: block;
+  position: absolute;
+    width: 99%;
+    height: 200px;
+   z-index: -1;
+    opacity: 0.9;
+    background-color: #242635;
+    border-radius: 7px;
+  }
+  .checkbox:checked~.pages{
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu {
+    visibility: visible;
+    position: fixed;
+    top: 0px;
+
+  }
+  .servi{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido{
+    /*flex-direction: column;*/
+    
+  }
+}
+@media screen and (min-width: 800px){
+  .menu {
+
+    visibility: hidden;
+    display: none;
+  }
+  .navbar{
+    background: linear-gradient(10deg,#242635, #373a59,#242635);
+    box-shadow: 0 0 1px white;
+
+  }
+}
+
+.contenido{
+ gap: 5rem;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+.soy{
+  color: white;
+  font-size: 40px;
+}
+.nombre{
+  color: #34B0BE;
+  font-size: 80px;
+  font-weight: 300;
+}
+.ocupacion{
+  color: white;
+  font-size: 25px;
+}
+.espacio1, .espacio2{
+  max-width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.photo{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 60%;
+  bottom: 40px;
+  position: relative;
+}
+.photo::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: -11%;
+  bottom: -27%;
+  width: 130%;
+  height: 130%;
+ z-index: -1;
+  opacity: 0.1;
+  background-image: url("./assets/img/Portafolio 4/xx-removebg-preview.png");
+  background-repeat: no-repeat;
+  
+  background-size: contain;
+  justify-content: center;
+}
+.experiencia1{
+  color: #34B0BE;
+  font-size: 23px;
+}
+.experiencia2{
+  color: white;
+  font-size: 23px;
+}
+
+.redes{
+  width: auto;
+  height: 80px;
+  display: flex;
+  gap: 20px;
+ 
+  
+}
+.redes .backred{
+  width: 30px;
+  height: 30px;
+  gap:10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D1CECA;
+}
+.backred img{
+  width: 85%;
+  height: 85%;
+}
+.foot-icons{
+width:30%;
+  padding: 20px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #353437;
+  border-radius: 20px;
+
+}
+
+.backredes{
+  background-color: #D1CECA;
+  border-radius: 10px;
+  width: 80px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+.serv {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0  auto; 
+  color: white;
+}
+.serv>p{
+  margin: 20px 0;
+  text-align: center;
+}
+.servi{
+  display: flex;
+  /*flex-wrap: wrap;*/
+
+
+  justify-content: center;
+}
+
+.servi div{
+  background-color: white;
+  width: 180px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+
+  background-image: url("./assets/img/Portafolio 4/Vectores/Ellipse 14.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.puntuacion{
+  background-color: white;
+  width: 70%;
+  height: 10px;
+  align-items: center;
+  border-radius: 4px;
+  margin: 0 auto;
+  
+}
+.puntuacion .inte{
+  background-color: #34B0BE;
+  width: 80%;
+  height: 100%;
+  border-radius: 4px;
+}
+.puntuacion .web{
+  background-color: #34B0BE;
+  width: 60%;
+  height: 100%;
+  border-radius: 4px;
+}
+.puntuacion .UX{
+  background-color: #34B0BE;
+  width: 70%;
+  height: 100%;
+  border-radius: 4px;
+}
+h2{
+  color: #34B0BE;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.about{
+  margin: 30px auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.about>a{
+  display: flex;
+  flex-direction: column;
+}
+.habilidades{
+  color: white;
+  padding: 10%;
+  margin: 0 auto;
+
+  justify-content: space-between;
+  text-align: center;
+}
+.hab{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.Myport{
+  width: 50%;
+  margin: 0 auto;
+}
+.port{
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.port::-webkit-scrollbar{
+  /*display: none;*/
+}
+.port>div>a>img{
+  width: 40vw;
+  margin: 0 5vw;
+}
+.port>div>a>img:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+footer{
+  height: 60px;
+  background: linear-gradient(10deg,#242635, #373a59,#242635);
+  text-align: center;
+  padding: 10px;
+}
+h3{
+  color: #34B0BE;
+}
+.contacto{
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  
+}
+.celu{
+
+
+  height: 170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.celu>a:hover{
+  opacity: 0.7;
+}
+.celu>a{
+  cursor: pointer;
+  height: 170px;
+  width: 170px;
+  background-color: white;
+  background-image: url("./assets/img/Portafolio 4/Vectores/Ellipse 14.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 20%;
+}
+.celu>a{
+  text-decoration: none;
+}
+.ema{
+
+  height: 170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.ema div{
+  height: 170px;
+  width: 170px;
+  background-color: white;
+  background-image: url("./assets/img/Portafolio 4/Vectores/Ellipse 14.svg") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 20%;
+}
+.serv> p, .about>p{
+  margin-top: 20px;
+  font-size: 23px;
+
+}
+h2{
+  margin: 30px 0;
+}
+i{
+  color: #128c7e;
+  font-size: 60px;
+  z-index: 100;
+}
